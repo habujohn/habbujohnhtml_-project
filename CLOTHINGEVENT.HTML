@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothing Event 2024</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2d3142;
+            --accent: #ef8354;
+            --bg: #f9f9f9;
+            --text: #222;
+            --card-bg: #fff;
+            --shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        header {
+            background: var(--primary);
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+        nav {
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .event-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            background: var(--card-bg);
+            box-shadow: var(--shadow);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+        .event-info img {
+            width: 320px;
+            border-radius: 1rem;
+            object-fit: cover;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .event-details {
+            flex: 1;
+        }
+        .event-details h2 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 2rem;
+        }
+        .event-details ul {
+            padding-left: 1.2rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 0.7rem;
+        }
+        .card h3 {
+            margin: 1rem 0 0.5rem 0;
+            color: var(--primary);
+        }
+        .card p {
+            color: #555;
+            font-size: 1rem;
+        }
+        .cta {
+            display: block;
+            width: max-content;
+            margin: 2.5rem auto 0 auto;
+            background: var(--accent);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 12px rgba(239,131,84,0.13);
+            transition: background 0.2s;
+        }
+        .cta:hover {
+            background: #d96c3b;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            color: #888;
+            font-size: 1rem;
+        }
+        @media (max-width: 800px) {
+            .event-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            .event-info img {
+                width: 100%;
+                max-width: 340px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Habbu's Clothing Event 2025</h1>
+        <p>Discover the latest trends, exclusive collections, and fashion workshops! with best discounts</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#collections">Collections</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#register">Register</a>
+    </nav>
+    <div class="container">
+        <section class="event-info" id="about">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Fashion Event">
+            <div class="event-details">
+                <h2>About the Event</h2>
+                <p>
+                    Join us for an unforgettable experience at the Clothing Event 2024! Explore new fashion lines, meet designers, and participate in hands-on workshops.
+                </p>
+                <ul>
+                    <li><strong>Date:</strong> August 10-12, 2025</li>
+                    <li><strong>Location:</strong> Grand Expo Center, Downtown</li>
+                    <li><strong>Highlights:</strong> Runway shows, pop-up shops, styling sessions, and more!</li>
+                </ul>
+            </div>
+        </section>
+        <section id="collections">
+            <h2 style="color:var(--accent);margin-top:3rem;">Featured Collections</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" alt="Streetwear">
+                    <h3>Urban Streetwear</h3>
+                    <p>Bold, expressive, and comfortable pieces for everyday style.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1469398715555-76331a6c7fa0?auto=format&fit=crop&w=400&q=80" alt="Eco Fashion">
+                    <h3>Eco-Friendly Fashion</h3>
+                    <p>Sustainable materials and ethical designs for a greener future.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Luxury">
+                    <h3>Luxury Couture</h3>
+                    <p>Elegant, high-end garments from renowned designers.</p>
+                </div>
+            </div>
+        </section>
+        <section id="workshops">
+            <h2 style="color:var(--accent);margin-top:3rem;">Workshops & Activities</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Styling">
+                    <h3>Personal Styling</h3>
+                    <p>Get personalized advice from top stylists and revamp your wardrobe.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="DIY">
+                    <h3>DIY Customization</h3>
+                    <p>Learn to customize your clothes with embroidery, patches, and more.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Sustainable">
+                    <h3>Sustainable Fashion Talk</h3>
+                    <p>Panel discussions on eco-friendly practices in the fashion industry.</p>
+                </div>
+            </div>
+        </section>
+        <a href="#register" class="cta" id="register">Register Now</a>
+    </div>
+    <footer>
+        &copy; 2025 Clothing Event. All rights reserved.
+    </footer>
+</body>
+</html></div>
